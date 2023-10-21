@@ -220,21 +220,21 @@ aside:
   button: true
   mobile: true # display on mobile
   position: right # left or right
+
   display:
-    archive: true
-    tag: true
-    category: true
+    archive: false
+    tag: false
+    category: false
   card_author:
     enable: true
     description:
     button:
       enable: true
-      icon: fab fa-github
-      text: Follow Me
-      link: https://github.com/xxxxxx
+      text: 一起追番吧
+      link: https://space.bilibili.com/293460496?spm_id_from=333.1007.0.0
   card_announcement:
     enable: true
-    content: This is my Blog
+    content: http://www.zzzfun.com/ \n https://www.omofun.tv/ \n http://www.dmh8.com/
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
