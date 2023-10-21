@@ -2,13 +2,13 @@ name: Auto update
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 0 * * *' # Every day
+    - cron: '0 * * * * ? ' # Every day
 
 jobs:
   meta:
     name: Update meta
     runs-on: ubuntu-latest
-    timeout-minutes: 1
+    timeout-minutes: 10
     steps:
       - name: Checkout
         uses: actions/checkout@v3
