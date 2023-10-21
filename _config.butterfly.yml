@@ -484,7 +484,7 @@ facebook_comments:
 twikoo:
   envId:
   region:
-  visitor: false
+  visitor: true
   option:
 
 # Giscus
