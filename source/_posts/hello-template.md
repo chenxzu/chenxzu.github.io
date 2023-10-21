@@ -1,4 +1,4 @@
 ---
 title: Template
 ---
-My blog
+My blog()
