@@ -1,47 +1,17 @@
-name: Auto update
+name: Dependabot Auto Merge
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: '0 0 * * *' # Every day
+  pull_request:
+    types: [ labeled, edited ]
 
 jobs:
-  meta:
-    name: Update meta
+  dependabot:
+    name: 'Dependabot'
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    permissions: write-all
+    if: ${{ github.actor == 'dependabot[bot]' && github.event_name == 'pull_request'}}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          ref: main
-
-      - name: Do meta update
-        shell: bash
-        run: |
-          npm install
-          npx hexo bangumis -u || echo
-
-      - name: Commit files
-        run: |
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add .
-          git commit -m "Update meta on $(date '+%Y-%m-%d %H:%M:%S')" || echo
-
-      - name: Push changes
-        uses: ad-m/github-push-action@master
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: ${{ github.ref }}
-
-      - name: Do build
-        shell: bash
-        run: |
-          npm run build
-
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
+      - name: Enable auto-merge for Dependabot PRs
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{ github.event.pull_request.html_url }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: gh-pages # The branch the action should deploy to.
-          FOLDER: public # The folder the action should deploy.
