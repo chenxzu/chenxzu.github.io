@@ -235,7 +235,7 @@ aside:
       link: https://space.bilibili.com/293460496?spm_id_from=333.1007.0.0
   card_announcement:
     enable: true
-    content: http://www.zzzfun.com/  https://www.omofun.tv/  http://www.dmh8.com/
+    content: http://www.zzzfun.com/ https://www.omofun.tv/ http://www.dmh8.com/
   card_recent_post:
     enable: true
     limit: 5 # if set 0 will show all
