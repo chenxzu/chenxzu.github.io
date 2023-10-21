@@ -107,7 +107,7 @@ deploy:
 bangumis:
   enable: true              # 是否启用
   path: bangumis/index.html # 生成追番页面的路径
-  show: 1                   # 想看，在看，看完
+  show: 2                   # 想看，在看，看完
   title: '追番列表'          # 标题
   #equot: '生命不息，追番不止' # 格言
   color_meta: "#555"        # 追番项元数据的颜色
