@@ -67,8 +67,7 @@ tag_img:
 # The banner image of tag page
 # format:
 #  - tag name: xxxxx
-tag_per_img: /img/83d1654100d142059e6f41ec8881ebfa.jpg
-tag name: 追番
+tag_bangumis_img: /img/83d1654100d142059e6f41ec8881ebfa.jpg
 
 # If the banner of category page not setting, it will show the top_img
 # note: category page, not categories page (子分類頁面的 top_img)
