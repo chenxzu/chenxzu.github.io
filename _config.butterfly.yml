@@ -49,7 +49,7 @@ avatar:
   effect: false
 
 # Disable all banner image
-disable_top_img: false
+disable_top_img: ture
 
 # The banner image of home page
 index_img: /img/83d1654100d142059e6f41ec8881ebfa.jpg
