@@ -45,7 +45,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /source/images_butterfly/_20231023203321.png
+  img: /source/images/_20231023203321.png
   effect: ture
 
 # Disable all banner image
