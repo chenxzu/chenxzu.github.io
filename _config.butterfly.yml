@@ -9,8 +9,8 @@ nav:
 
 # Menu 目錄
 menu:
-   主页: / || fas fa-home
-   我的追番: /bangumis/||
+   首页: / || fas fa-home
+   追番: /bangumis/||
    文章: /archives/ || fas fa-archive
   # Tags: /tags/ || fas fa-tags
   # Categories: /categories/ || fas fa-folder-open
@@ -23,18 +23,18 @@ menu:
 # Code Blocks (代碼相關)
 # --------------------------------------
 
-highlight_theme: light #  darker / pale night / light / ocean / mac / mac light / false
+highlight_theme: mac #  darker / pale night / light / ocean / mac / mac light / false
 highlight_copy: true # copy button
 highlight_lang: true # show the code language
 highlight_shrink: false # true: shrink the code blocks / false: expand the code blocks | none: expand code blocks and hide the button
-highlight_height_limit: false # unit: px
+highlight_height_limit: 230 # unit: px
 code_word_wrap: false
 
 # Social Settings (社交圖標設置)
 # formal:
 #   icon: link || the description || color
 social:
-  # fab fa-github: https://github.com/xxxxx || Github || '#24292e'
+   fab fa-哔哩哔哩: https://space.bilibili.com/293460496?spm_id_from=333.1007.0.0 || 哔哩哔哩 || '#24292e'
   # fas fa-envelope: mailto:xxxxxx@gmail.com || Email || '#4a7dbe'
 
 # Image (圖片設置)
@@ -45,7 +45,7 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png
+  img: source/images_butterfly/_20231023203321.jpg
   effect: false
 
 # Disable all banner image
