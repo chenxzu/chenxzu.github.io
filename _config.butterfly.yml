@@ -45,8 +45,8 @@ favicon: /img/favicon.png
 
 # Avatar (頭像)
 avatar:
-  img: /source/images/_20231023203321.png
-  effect: ture
+  img: /img/_20231023203321.png
+  effect: false
 
 # Disable all banner image
 disable_top_img: false
