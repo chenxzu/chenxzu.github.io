@@ -102,7 +102,9 @@ theme: butterfly
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repository: chenxzu.github.io@github.com:Fomalhaut-Blog/Fomalhaut-Blog.github.io.git
+  branch: main
 
 bangumis:
   enable: true              # 是否启用
